@@ -53,27 +53,31 @@ If you have comments, suggestions & reports, please feel free to contact me!
 | Function        | Result object | Linux | OSX | BSD | Comments |
 | --------------- | ----- | ----- | ---- | ------- | -------- |
 | sys.all() | {...} | X | X | X | all available sysctl info |
-| sys.type(array) | {...} | X | X | X | all types in array as requested info, assuming sysctl supports |
-| sys.type(sting) |  {...} | X | X | X | requested sysctl type info |
-| sys.item(string) | string | X | X | X | e.g. Intel (from "processor-manufacturer") |
+#| sys.type(array) | {...} | X | X | X | all types in array as requested info, assuming sysctl supports |
+#| sys.type(sting) |  {...} | X | X | X | requested sysctl type info |
+#| sys.item(string) | string | X | X | X | e.g. Intel (from "processor-manufacturer") |
 
 
 ```js
 const sys = require('sysctl');
 
-sys.item('kern.ostype', function(data) {
-	console.log('kern.ostype :'+data);
-});
 
-dmi.type(['kern','net'],function(data){
-	console.log('System kernel and net contains:');
-	console.log(data)
+sys.all(function(data){
+  console.log(data);
 });
-
 ```
+#sys.item('kern.ostype', function(data) {
+#	console.log('kern.ostype :'+data);
+#});
+
+#dmi.type(['kern','net'],function(data){
+#	console.log('System kernel and net contains:');
+#	console.log(data)
+#});
+#```
 ## Known Issues
 
-No known issues at this time
+No known issues at this time, mac osx might not work as expected
 
 #### sysctl install
 

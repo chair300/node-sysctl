@@ -13,5 +13,6 @@
 var sys = require('../lib/sysctl');
 
 sys.all(function (data){
+  console.log(data);
   console.log(JSON.stringify(data, true, 4));
 });

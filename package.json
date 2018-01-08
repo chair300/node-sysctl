@@ -1,7 +1,7 @@
 {
   "name": "sysctl",
   "version": "1.0.1",
-  "description": "simple node library for dmidecode",
+  "description": "simple node library for sysctl",
   "license": "MIT",
   "author": "Christopher Harrison <harrison@glsan.com> (https://glsan.com)",
   "homepage": "https://github.com/chair300/node-sysctl",
