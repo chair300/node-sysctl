@@ -17,7 +17,7 @@ $ npm install sysctl --save
 
 
 ```js
-const sys = require('sysctl');
+const sys = require('node-sysctl');
 
 sys.all(function(data){
   console.log('All sysctl information:');
@@ -59,7 +59,7 @@ If you have comments, suggestions & reports, please feel free to contact me!
 
 
 ```js
-const sys = require('sysctl');
+const sys = require('node-sysctl');
 
 
 sys.all(function(data){

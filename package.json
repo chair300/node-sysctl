@@ -1,5 +1,5 @@
 {
-  "name": "sysctl",
+  "name": "node-sysctl",
   "version": "1.0.1",
   "description": "simple node library for sysctl",
   "license": "MIT",
