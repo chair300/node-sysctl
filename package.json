@@ -1,0 +1,42 @@
+{
+  "name": "sysctl",
+  "version": "1.0.1",
+  "description": "simple node library for dmidecode",
+  "license": "MIT",
+  "author": "Christopher Harrison <harrison@glsan.com> (https://glsan.com)",
+  "homepage": "https://github.com/chair300/node-sysctl",
+  "main": "./lib/sysctl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "system information",
+    "sysinfo",
+    "os",
+    "linux",
+    "osx",
+    "windows",
+    "cpu",
+    "cache",
+    "freebsd",
+    "memory",
+    "block devices",
+    "network",
+    "graphics",
+    "graphic card",
+    "graphic controller",
+    "display"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chair300/node-sysctl.git"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "freebsd"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
